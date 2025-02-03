@@ -9,7 +9,7 @@
   .dark-01{
     color: rgba(58, 58, 58, 1);
   }
-   h1, h2, h4, p{
+   h1, h2, h3, h4, p{
     margin: 0;
    }
    section{
@@ -158,11 +158,26 @@
       border: none;
       padding: 10px 24px;
       margin-top: 17px;
+      }
+      footer{
+        background: rgba(10, 8, 38, 1);
+        text-align: center;
+        padding: 50px;
+      }
+      .footer-title{
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        font-weight: 700;
        }
+       .footer-description{
+        color: rgb(217, 219, 225);
+        font-size: 0.85rem;
+        font-weight: 700;
+        }
 
      @media screen and (max-width:576px) {
       header, section{
-        margin: 30px auto;
+        margin: 30px auto 30px auto;
       }
       .header-title{
         font-size: 2rem;
@@ -194,5 +209,12 @@
        }
        .card-container{
         grid-template-columns: repeat(1, 1fr);
+       }
+       .feature-container{
+        flex-direction: column-reverse;
+        gap: 50px;
+       }
+       .feature-subcontainer{
+        text-align: center;
        }
      }
